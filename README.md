@@ -1,3 +1,57 @@
+# HBNB TEST
+
+This is the console /command interpreter for the Holberton Airbnb clone project. The console can be used to store objects in and retrieve objects from a JSON!
+
+### Supported classes:
+* BaseModel
+* User
+* State
+* City
+* Amenity
+* Place
+* Review
+
+### Commands:
+* create - create an object
+* show - show an object (based on id)
+* destroy - destroy an object
+* all - show all objects, of one type or all types
+* quit/EOF - quit the console
+* help - see descriptions of commands
+
+To start, navigate to the project folder and enter `./console.py` in the shell.
+
+#### Create
+`create <class name>`
+Ex:
+`create BaseModel`
+
+#### Show
+`show <class name> <object id>`
+Ex:
+`show User my_id`
+
+#### Destroy
+`destroy <class name> <object id>`
+Ex:
+`destroy Place my_place_id`
+
+#### All
+`all` or `all <class name>`
+Ex:
+`all` or `all State`
+
+#### Quit
+`quit` or `EOF`
+
+#### Help
+`help` or `help <command>`
+Ex:
+`help` or `help quit`
+
+Additionally, the console supports `<class name>.<command>(<parameters>)` syntax.
+Ex:
+`City.show(my_city_id)`
 <center> <h1>HBNB - The Console</h1> </center>
 
 This repository contains the initial stage of a student project to build a clone of the AirBnB website. This stage implements a backend interface, or console, to manage program data. Console commands allow the user to create, update, and destroy objects, as well as manage file storage. Using a system of JSON serialization/deserialization, storage is persistent between sessions.
@@ -140,3 +194,4 @@ Usage: <class_name>.update(<_id>, <dictionary>)
 (hbnb) ["[User] (98bea5de-9cb0-4d78-8a9d-c4de03521c30) {'updated_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134362), 'name': 'Fred the Frog', 'age': 9, 'id': '98bea5de-9cb0-4d78-8a9d-c4de03521c30', 'created_at': datetime.datetime(2020, 2, 19, 21, 47, 29, 134343)}"]
 ```
 <br>
+
